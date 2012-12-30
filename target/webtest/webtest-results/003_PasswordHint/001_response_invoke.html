@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Cache-Control" content="no-store"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/test02-0.0.1-SNAPSHOT/images/favicon.ico"/>
+    <title>ç»å½ | AppFuse</title>
+
+    <link rel="stylesheet" type="text/css" media="all" href="/test02-0.0.1-SNAPSHOT/styles/lib/bootstrap-2.2.1.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/test02-0.0.1-SNAPSHOT/styles/lib/bootstrap-responsive-2.2.1.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/test02-0.0.1-SNAPSHOT/styles/style.css" />
+    <meta name="menu" content="Login"/><script type="text/javascript" src="/test02-0.0.1-SNAPSHOT/scripts/lib/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/test02-0.0.1-SNAPSHOT/scripts/lib/bootstrap-2.2.1.min.js"></script>
+    <script type="text/javascript" src="/test02-0.0.1-SNAPSHOT/scripts/lib/plugins/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/test02-0.0.1-SNAPSHOT/scripts/script.js"></script>
+</head>
+<body id="login">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="/test02-0.0.1-SNAPSHOT/">AppFuse</a>
+                <div class="nav-collapse collapse">
+<ul class="nav">
+    <li class="active">
+            <a href="/test02-0.0.1-SNAPSHOT/login">ç»å½</a>
+        </li>
+    </ul>
+</div>
+<div id="switchLocale"><a href="/test02-0.0.1-SNAPSHOT/?locale=en">
+                        AppFuse in English</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <form method="post" id="loginForm" action="/test02-0.0.1-SNAPSHOT/j_security_check"
+    onsubmit="saveUsername(this);return validateForm(this)" class="form-signin">
+    <h2 class="form-signin-heading">
+        ç»å½</h2>
+<input type="text" name="j_username" id="j_username" class="input-block-level"
+           placeholder="ç¨æ·å" required tabindex="1">
+    <input type="password" class="input-block-level" name="j_password" id="j_password" tabindex="2"
+           placeholder="å¯ç " required>
+
+<label class="checkbox" for="rememberMe">
+        <input type="checkbox" class="checkbox" name="_spring_security_remember_me" id="rememberMe" tabindex="3"/>
+        è®©ç³»ç»è®°ä½æ</label>
+<button type="submit" class="btn btn-large btn-primary" name="login" tabindex="4">
+        ç»å½</button>
+</form>
+
+<p>
+    ä¸æ¯æ³¨åç¨æ·? <a href="/test02-0.0.1-SNAPSHOT/signup">ç³è¯·</a> ä¸ä¸ªå¸å·ã</p>
+
+<p>å¿è®°äºå¯ç ?  è®©ç³»ç»å° <a href="?" onmouseover="window.status='ç³»ç»åéå¯ç æç¤ºã'; return true" onmouseout="window.status=''; return true" title="ç³»ç»åéå¯ç æç¤ºã" onclick="passwordHint(); return false">å¯ç æç¤ºä¿¡æ¯å·²e-mailå½¢å¼åéç»æ¨</a>ã</p></div>
+    </div>
+
+    <div id="footer">
+        <span class="left">Version 0.0.1-SNAPSHOT</span>
+        <span class="right">
+            &copy; 2012<a href="http://raibledesigns.com">Your Company Here</a>
+        </span>
+    </div>
+<script type="text/javascript">
+    if ($.cookie("username") != null && $.cookie("username") != "") {
+        $("#j_username").val($.cookie("username"));
+        $("#j_password").focus();
+    } else {
+        $("#j_username").focus();
+    }
+    
+    function saveUsername(theForm) {
+        $.cookie("username",theForm.j_username.value, { expires: 30, path: "/test02-0.0.1-SNAPSHOT/"});
+    }
+    
+    function validateForm(form) {                                                               
+        var valid = validateRequired(form);
+        if (valid == false) {
+            $(".control-group").addClass('error');
+        }
+        return valid;
+    }
+
+    function passwordHint() {
+        if ($("#j_username").val().length == 0) {
+            alert("ç¨æ·å ä¸ºå¿å¡«é¡¹ã");
+            $("#j_username").focus();
+        } else {
+            location.href="/test02-0.0.1-SNAPSHOT/passwordHint?username=" + $("#j_username").val();
+        }
+    }
+    
+    function required () { 
+        this.aa = new Array("j_username", "ç¨æ·å ä¸ºå¿å¡«é¡¹ã", new Function ("varName", " return this[varName];"));
+        this.ab = new Array("j_password", "å¯ç  ä¸ºå¿å¡«é¡¹ã", new Function ("varName", " return this[varName];"));
+    } 
+</script></body>
+</html>

@@ -1,0 +1,17 @@
+#;Method;URL;Response code;Response Message;Content Type;Duration
+1;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT;302;Found;;16
+2;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/;302;Found;;31
+3;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/mainMenu;302;Found;;16
+4;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/login;200;OK;text/html;31
+5;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/scripts/lib/jquery-1.8.2.min.js;200;OK;application/javascript;390
+6;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/styles/lib/bootstrap-2.2.1.min.css;200;OK;text/css;16
+7;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/styles/lib/bootstrap-responsive-2.2.1.min.css;200;OK;text/css;16
+8;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/styles/style.css;200;OK;text/css;31
+9;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/scripts/lib/bootstrap-2.2.1.min.js;200;OK;application/javascript;16
+10;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/scripts/lib/plugins/jquery.cookie.js;200;OK;application/javascript;16
+11;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/scripts/script.js;200;OK;application/javascript;15
+12;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/passwordHint?username=admin;302;Found;;3117
+13;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT;302;Found;;10
+14;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/;302;Found;;10
+15;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/mainMenu;302;Found;;20
+16;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/login;200;OK;text/html;40

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Cache-Control" content="no-store"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/ServiceContractSystem-0.0.1-SNAPSHOT/images/favicon.ico;jsessionid=26CA6B4CA59F18137CC30F7228F933A8"/>
+    <title>æ³¨å | AppFuse</title>
+
+    <link rel="stylesheet" type="text/css" media="all" href="/ServiceContractSystem-0.0.1-SNAPSHOT/styles/lib/bootstrap-2.2.1.min.css;jsessionid=26CA6B4CA59F18137CC30F7228F933A8" />
+    <link rel="stylesheet" type="text/css" media="all" href="/ServiceContractSystem-0.0.1-SNAPSHOT/styles/lib/bootstrap-responsive-2.2.1.min.css;jsessionid=26CA6B4CA59F18137CC30F7228F933A8" />
+    <link rel="stylesheet" type="text/css" media="all" href="/ServiceContractSystem-0.0.1-SNAPSHOT/styles/style.css;jsessionid=26CA6B4CA59F18137CC30F7228F933A8" />
+    <script type="text/javascript" src="/ServiceContractSystem-0.0.1-SNAPSHOT/scripts/lib/jquery-1.8.2.min.js;jsessionid=26CA6B4CA59F18137CC30F7228F933A8"></script>
+    <script type="text/javascript" src="/ServiceContractSystem-0.0.1-SNAPSHOT/scripts/lib/bootstrap-2.2.1.min.js;jsessionid=26CA6B4CA59F18137CC30F7228F933A8"></script>
+    <script type="text/javascript" src="/ServiceContractSystem-0.0.1-SNAPSHOT/scripts/lib/plugins/jquery.cookie.js;jsessionid=26CA6B4CA59F18137CC30F7228F933A8"></script>
+    <script type="text/javascript" src="/ServiceContractSystem-0.0.1-SNAPSHOT/scripts/script.js;jsessionid=26CA6B4CA59F18137CC30F7228F933A8"></script>
+</head>
+<body class="signup">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="/ServiceContractSystem-0.0.1-SNAPSHOT/;jsessionid=26CA6B4CA59F18137CC30F7228F933A8">AppFuse</a>
+                <div class="nav-collapse collapse">
+<ul class="nav">
+    <li class="active">
+            <a href="/ServiceContractSystem-0.0.1-SNAPSHOT/login;jsessionid=26CA6B4CA59F18137CC30F7228F933A8">ç»å½</a>
+        </li>
+    </ul>
+</div>
+<div id="switchLocale"><a href="/ServiceContractSystem-0.0.1-SNAPSHOT/;jsessionid=26CA6B4CA59F18137CC30F7228F933A8?locale=en">
+                        AppFuse in English</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span2">
+    <h2>æ°ç¨æ·æ³¨å</h2>
+    <p>è¯·è¾å¥ç¨æ·ä¿¡æ¯ã</p>
+</div>
+<div class="span7">
+    <form id="signupForm" class="well form-horizontal" action="signup" method="post" onsubmit="return validateUser(this)"><fieldset class="control-group">
+        <label for="username" class="control-label">ç¨æ·å <span class="required">*</span></label><div class="controls">
+                <input id="username" name="username" type="text" value=""/></div>
+        </fieldset>
+        <fieldset class="control-group">
+        <label for="password" class="control-label">å¯ç  <span class="required">*</span></label><div class="controls">
+                <input id="password" name="password" type="password" value=""/></div>
+        </fieldset>
+        <fieldset class="control-group">
+        <label for="confirmPassword" class="control-label">ç¡®è®¤å¯ç  <span class="required">*</span></label><div class="controls">
+                <input id="confirmPassword" name="confirmPassword" type="password" value=""/></div>
+        </fieldset>
+        <fieldset class="control-group">
+        <label for="passwordHint" class="control-label">å¯ç æç¤º <span class="required">*</span></label><div class="controls">
+                <input id="passwordHint" name="passwordHint" type="text" value=""/></div>
+        </fieldset>
+        <fieldset class="control-group">
+        <label for="firstName" class="control-label">å <span class="required">*</span></label><div class="controls">
+                <input id="firstName" name="firstName" type="text" value="" maxlength="50"/></div>
+        </fieldset>
+        <fieldset class="control-group">
+        <label for="lastName" class="control-label">å§ <span class="required">*</span></label><div class="controls">
+                <input id="lastName" name="lastName" type="text" value="" maxlength="50"/></div>
+        </fieldset>
+        <fieldset class="control-group">
+        <label for="email" class="control-label">E-Mail <span class="required">*</span></label><div class="controls">
+                <input id="email" name="email" type="text" value=""/></div>
+        </fieldset>
+        <fieldset class="control-group">
+            <label for="phoneNumber" class="control-label">çµè¯</label><div class="controls">
+                <input id="phoneNumber" name="phoneNumber" type="text" value=""/></div>
+        </fieldset>
+        <fieldset class="control-group">
+            <label for="website" class="control-label">ç½å</label><div class="controls">
+                <input id="website" name="website" type="text" value=""/></div>
+        </fieldset>
+        <fieldset>
+            <legend class="accordion-heading">
+                <a data-toggle="collapse" href="#collapse-address">å°å</a>
+            </legend>
+            <div id="collapse-address" class="accordion-body collapse">
+                <fieldset class="control-group">
+                    <label for="address.address" class="control-label">å°å</label><div class="controls">
+                        <input id="address.address" name="address.address" type="text" value=""/></div>
+                </fieldset>
+                <fieldset class="control-group">
+                    <label for="address.city" class="control-label">åå¸</label><div class="controls">
+                        <input id="address.city" name="address.city" type="text" value=""/></div>
+                </fieldset>
+                <fieldset class="control-group">
+                    <label for="address.province" class="control-label">å·ç</label><div class="controls">
+                        <input id="address.province" name="address.province" type="text" value=""/></div>
+                </fieldset>
+                <fieldset class="control-group">
+                    <label for="address.postalCode" class="control-label">é®ç¼</label><div class="controls">
+                        <input id="address.postalCode" name="address.postalCode" type="text" value=""/></div>
+                </fieldset>
+                <fieldset class="control-group">
+                    <label for="address.country" class="control-label">å½å®¶</label><div class="controls">
+                        <select name="address.country" id="address.country" class="select">
+    <option value="" selected="selected"></option>
+    <option value="AL">阿尔巴尼亚</option>
+    <option value="DZ">阿尔及利亚</option>
+    <option value="AR">阿根廷</option>
+    <option value="AE">阿拉伯联合酋长国</option>
+    <option value="OM">阿曼</option>
+    <option value="EG">埃及</option>
+    <option value="IE">爱尔兰</option>
+    <option value="EE">爱沙尼亚</option>
+    <option value="AT">奥地利</option>
+    <option value="AU">澳大利亚</option>
+    <option value="PY">巴拉圭</option>
+    <option value="BH">巴林</option>
+    <option value="PA">巴拿马</option>
+    <option value="BR">巴西</option>
+    <option value="BY">白俄罗斯</option>
+    <option value="BG">保加利亚</option>
+    <option value="BE">比利时</option>
+    <option value="IS">冰岛</option>
+    <option value="BO">玻利维亚</option>
+    <option value="PR">波多黎哥</option>
+    <option value="PL">波兰</option>
+    <option value="BA">波斯尼亚和黑山共和国</option>
+    <option value="DK">丹麦</option>
+    <option value="DE">德国</option>
+    <option value="DO">多米尼加共和国</option>
+    <option value="RU">俄罗斯</option>
+    <option value="EC">厄瓜多尔</option>
+    <option value="FR">法国</option>
+    <option value="PH">菲律宾</option>
+    <option value="FI">芬兰</option>
+    <option value="CO">哥伦比亚</option>
+    <option value="CR">哥斯达黎加</option>
+    <option value="KR">韩国</option>
+    <option value="NL">荷兰</option>
+    <option value="ME">黑山</option>
+    <option value="HN">洪都拉斯</option>
+    <option value="CA">加拿大</option>
+    <option value="CZ">捷克共和国</option>
+    <option value="QA">卡塔尔</option>
+    <option value="KW">科威特</option>
+    <option value="HR">克罗地亚</option>
+    <option value="LV">拉脱维亚</option>
+    <option value="LB">黎巴嫩</option>
+    <option value="LY">利比亚</option>
+    <option value="LT">立陶宛</option>
+    <option value="LU">卢森堡</option>
+    <option value="RO">罗马尼亚</option>
+    <option value="MT">马耳他</option>
+    <option value="MY">马来西亚</option>
+    <option value="MK">马其顿王国</option>
+    <option value="US">美国</option>
+    <option value="PE">秘鲁</option>
+    <option value="MA">摩洛哥</option>
+    <option value="MX">墨西哥</option>
+    <option value="ZA">南非</option>
+    <option value="NI">尼加拉瓜</option>
+    <option value="NO">挪威</option>
+    <option value="PT">葡萄牙</option>
+    <option value="JP">日本</option>
+    <option value="SE">瑞典</option>
+    <option value="CH">瑞士</option>
+    <option value="SV">萨尔瓦多</option>
+    <option value="RS">塞尔维亚</option>
+    <option value="CS">塞尔维亚及黑山</option>
+    <option value="CY">塞浦路斯</option>
+    <option value="SA">沙特阿拉伯</option>
+    <option value="SK">斯洛伐克</option>
+    <option value="SI">斯洛文尼亚</option>
+    <option value="SD">苏丹</option>
+    <option value="TW">台湾地区</option>
+    <option value="TH">泰国</option>
+    <option value="TN">突尼斯</option>
+    <option value="TR">土耳其</option>
+    <option value="GT">危地马拉</option>
+    <option value="VE">委内瑞拉</option>
+    <option value="UA">乌克兰</option>
+    <option value="UY">乌拉圭</option>
+    <option value="ES">西班牙</option>
+    <option value="GR">希腊</option>
+    <option value="HK">香港</option>
+    <option value="SG">新加坡</option>
+    <option value="NZ">新西兰</option>
+    <option value="HU">匈牙利</option>
+    <option value="SY">叙利亚</option>
+    <option value="YE">也门</option>
+    <option value="IQ">伊拉克</option>
+    <option value="IL">以色列</option>
+    <option value="IT">意大利</option>
+    <option value="IN">印度</option>
+    <option value="ID">印度尼西亚</option>
+    <option value="GB">英国</option>
+    <option value="JO">约旦</option>
+    <option value="VN">越南</option>
+    <option value="CL">智利</option>
+    <option value="CN">中国</option>
+</select></div>
+                </fieldset>
+            </div>
+        </fieldset>
+        <fieldset class="form-actions">
+            <button type="submit" class="btn btn-primary" name="save" onclick="bCancel=false">
+                <i class="icon-ok icon-white"></i> æ³¨å</button>
+            <button type="submit" class="btn" name="cancel" onclick="bCancel=true">
+                <i class="icon-remove"></i> åæ¶</button>
+        </fieldset>
+    </form></div></div>
+    </div>
+
+    <div id="footer">
+        <span class="left">Version 0.0.1-SNAPSHOT</span>
+        <span class="right">
+            &copy; 2012<a href="http://raibledesigns.com">Your Company Here</a>
+        </span>
+    </div>
+<script type="text/javascript" language="Javascript1.1"> 
+
+<!-- Begin 
+
+     var bCancel = false; 
+
+    function validateUser(form) {                                                                   
+        if (bCancel) 
+      return true; 
+        else 
+       return validateRequired(form) && validateEmail(form) && validateTwoFields(form); 
+   } 
+
+    function required () { 
+     this.aa = new Array("username", "ç¨æ·å ä¸ºå¿å¡«é¡¹ã", new Function ("varName", " return this[varName];"));
+     this.ab = new Array("password", "å¯ç  ä¸ºå¿å¡«é¡¹ã", new Function ("varName", "this.secondProperty='confirmPassword';  return this[varName];"));
+     this.ac = new Array("confirmPassword", "ç¡®è®¤å¯ç  ä¸ºå¿å¡«é¡¹ã", new Function ("varName", " return this[varName];"));
+     this.ad = new Array("firstName", "å ä¸ºå¿å¡«é¡¹ã", new Function ("varName", " return this[varName];"));
+     this.ae = new Array("lastName", "å§ ä¸ºå¿å¡«é¡¹ã", new Function ("varName", " return this[varName];"));
+     this.af = new Array("email", "E-Mail ä¸ºå¿å¡«é¡¹ã", new Function ("varName", " return this[varName];"));
+     this.ag = new Array("passwordHint", "å¯ç æç¤º ä¸ºå¿å¡«é¡¹ã", new Function ("varName", " return this[varName];"));
+    } 
+
+    function email () { 
+     this.aa = new Array("email", "E-Mail ä¸ºæ æé®ä»¶å°åã", new Function ("varName", " return this[varName];"));
+    } 
+
+    function twofields () { 
+     this.aa = new Array("password", "å¯ç  å­æ®µä¸ ç¡®è®¤å¯ç  å­æ®µçå¼å¿é¡»ä¸è´ã", new Function ("varName", "this.secondProperty='confirmPassword';  return this[varName];"));
+    } 
+
+
+//End --> 
+</script>
+
+<script type="text/javascript" src="/ServiceContractSystem-0.0.1-SNAPSHOT/scripts/validator.jsp"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("input[type='text']:visible:enabled:first", document.forms['signupForm']).focus();
+    });
+</script></body>
+</html>

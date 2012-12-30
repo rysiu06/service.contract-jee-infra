@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<summary Implementation-Title="Canoo Webtest" Implementation-Version="development">
+    <testresult endtime="Tue Dec 18 16:26:33 CST 2012"
+        location="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml:60: "
+        starttime="Tue Dec 18 16:26:29 CST 2012" successful="yes" testspecname="passwordHint">
+        <config>
+            <parameter name="port" value="8081"/>
+            <parameter name="protocol" value="http"/>
+            <parameter name="host" value="localhost"/>
+            <parameter name="resultpath" value="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\target\webtest\webtest-results"/>
+            <parameter name="saveprefix" value="response"/>
+            <parameter name="basepath" value="ServiceContractSystem-0.0.1-SNAPSHOT"/>
+            <parameter name="resultfile" value="WebTestReport.xml"/>
+            <parameter name="haltonerror" value="no"/>
+            <parameter name="browser" value="IE6"/>
+            <parameter name="saveresponse" value="yes"/>
+            <parameter name="haltonfailure" value="no"/>
+            <parameter name="autorefresh" value="false"/>
+            <parameter name="timeout" value="300"/>
+            <parameter name="showhtmlparseroutput" value="no"/>
+        </config>
+        <results>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="63" description="get Login Page" duration="1716" result="completed" taskName="invoke">
+                <parameter name="-> complete url" value="http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT"/>
+                <parameter name="url" value="/"/>
+                <resultFile name="001_response_invoke.html"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="64" description="we should see the login title" duration="15"
+                result="completed" taskName="verifytitle">
+                <parameter name="regex" value="true"/>
+                <parameter name="text" value=".*ç»å½.*"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="65" description="click password hint link" duration="2340" result="completed" taskName="invoke">
+                <parameter name="-> complete url" value="http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/passwordHint?username=admin"/>
+                <parameter name="url" value="/passwordHint?username=admin"/>
+                <resultFile name="002_response_invoke.html"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="66" description="show login title again" duration="0" result="completed" taskName="verifytitle">
+                <parameter name="regex" value="true"/>
+                <parameter name="text" value=".*ç»å½.*"/>
+            </step>
+        </results>
+    </testresult>
+</summary>

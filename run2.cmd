@@ -1,0 +1,1 @@
+mvn -DskipTests -DgenerateReports=false -e site

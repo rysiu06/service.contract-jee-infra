@@ -1,0 +1,10 @@
+url=http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/userform?method=Add&from=list
+cookies=2
+cookie.0.name=username
+cookie.0.domain=localhost
+cookie.0.value=admin
+cookie.0.path=/ServiceContractSystem-0.0.1-SNAPSHOT/
+cookie.1.name=JSESSIONID
+cookie.1.domain=localhost
+cookie.1.value=6D99780CD011D1F83D416ADD2DBD988E
+cookie.1.path=/ServiceContractSystem-0.0.1-SNAPSHOT/

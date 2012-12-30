@@ -1,0 +1,8 @@
+com.serbrave.appfuse.test02.webapp.controller
+com.serbrave.appfuse.test02.webapp.filter
+com.serbrave.appfuse.test02.webapp.jsp
+com.serbrave.appfuse.test02.webapp.listener
+com.serbrave.appfuse.test02.webapp.model
+com.serbrave.appfuse.test02.webapp.spring
+com.serbrave.appfuse.test02.webapp.taglib
+com.serbrave.appfuse.test02.webapp.util

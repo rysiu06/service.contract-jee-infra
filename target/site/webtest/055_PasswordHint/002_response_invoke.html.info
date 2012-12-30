@@ -1,0 +1,6 @@
+url=http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/login
+cookies=1
+cookie.0.name=JSESSIONID
+cookie.0.domain=localhost
+cookie.0.value=62E3820F1B3F6564A7EFEA0ADC2C403C
+cookie.0.path=/ServiceContractSystem-0.0.1-SNAPSHOT/

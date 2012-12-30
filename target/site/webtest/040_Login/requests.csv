@@ -1,0 +1,15 @@
+#;Method;URL;Response code;Response Message;Content Type;Duration
+1;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT;302;Found;;250
+2;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/;302;Found;;171
+3;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/mainMenu;302;Found;;125
+4;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/login;200;OK;text/html;29265
+5;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/scripts/lib/jquery-1.8.2.min.js;200;OK;application/javascript;655
+6;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/styles/lib/bootstrap-2.2.1.min.css;200;OK;text/css;577
+7;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/styles/lib/bootstrap-responsive-2.2.1.min.css;200;OK;text/css;78
+8;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/styles/style.css;200;OK;text/css;47
+9;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/scripts/lib/bootstrap-2.2.1.min.js;200;OK;application/javascript;78
+10;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/scripts/lib/plugins/jquery.cookie.js;200;OK;application/javascript;109
+11;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/scripts/script.js;200;OK;application/javascript;172
+12;POST;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/j_security_check;302;Found;;1451
+13;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/app/mainMenu;302;Found;;46
+14;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/mainMenu;200;OK;text/html;4244

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<summary Implementation-Title="Canoo Webtest" Implementation-Version="development">
+    <testresult endtime="Tue Dec 18 16:20:34 CST 2012"
+        location="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml:175: "
+        starttime="Tue Dec 18 16:20:19 CST 2012" successful="yes" testspecname="signup">
+        <config>
+            <parameter name="port" value="8081"/>
+            <parameter name="protocol" value="http"/>
+            <parameter name="host" value="localhost"/>
+            <parameter name="resultpath" value="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\target\webtest\webtest-results"/>
+            <parameter name="saveprefix" value="response"/>
+            <parameter name="basepath" value="ServiceContractSystem-0.0.1-SNAPSHOT"/>
+            <parameter name="resultfile" value="WebTestReport.xml"/>
+            <parameter name="haltonerror" value="no"/>
+            <parameter name="browser" value="IE6"/>
+            <parameter name="saveresponse" value="yes"/>
+            <parameter name="haltonfailure" value="no"/>
+            <parameter name="autorefresh" value="false"/>
+            <parameter name="timeout" value="300"/>
+            <parameter name="showhtmlparseroutput" value="no"/>
+        </config>
+        <results>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="178" description="click signup link" duration="6897" result="completed" taskName="invoke">
+                <parameter name="-> complete url" value="http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/signup"/>
+                <parameter name="url" value="/signup"/>
+                <resultFile name="001_response_invoke.html"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="179" description="view signup title" duration="0" result="completed" taskName="verifytitle">
+                <parameter name="regex" value="true"/>
+                <parameter name="text" value=".*æ³¨å.*"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="181" description="set username" duration="140" result="completed" taskName="setinputfield">
+                <parameter name="name" value="username"/>
+                <parameter name="value" value="signup-user"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="182" description="set password" duration="60" result="completed" taskName="setinputfield">
+                <parameter name="name" value="password"/>
+                <parameter name="value" value="test"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="183" description="set confirmPassword" duration="60" result="completed" taskName="setinputfield">
+                <parameter name="name" value="confirmPassword"/>
+                <parameter name="value" value="test"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="184" description="set firstName" duration="60" result="completed" taskName="setinputfield">
+                <parameter name="name" value="firstName"/>
+                <parameter name="value" value="Test"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="185" description="set lastName" duration="60" result="completed" taskName="setinputfield">
+                <parameter name="name" value="lastName"/>
+                <parameter name="value" value="Name"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="186" description="set city" duration="280" result="completed" taskName="setinputfield">
+                <parameter name="name" value="address.city"/>
+                <parameter name="value" value="Denver"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="187" description="set state" duration="70" result="completed" taskName="setinputfield">
+                <parameter name="name" value="address.province"/>
+                <parameter name="value" value="CO"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="188" description="select country" duration="20" result="completed" taskName="setselectfield">
+                <parameter name="name" value="address.country"/>
+                <parameter name="value" value="US"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="189" description="set postalCode" duration="170" result="completed" taskName="setinputfield">
+                <parameter name="name" value="address.postalCode"/>
+                <parameter name="value" value="80210"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="190" description="set email" duration="490" result="completed" taskName="setinputfield">
+                <parameter name="name" value="email"/>
+                <parameter name="value" value="signup-user@raibledesigns.com"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="191" description="set website" duration="350" result="completed" taskName="setinputfield">
+                <parameter name="name" value="website"/>
+                <parameter name="value" value="http://raibledesigns.com"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="192" description="set passwordHint" duration="60" result="completed" taskName="setinputfield">
+                <parameter name="name" value="passwordHint"/>
+                <parameter name="value" value="test"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="193" description="Click button 'Signup'" duration="6567" result="completed" taskName="clickbutton">
+                <parameter name="label" value="æ³¨å"/>
+                <resultFile name="002_response_clickbutton.html"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="195" description="view main menu" duration="0" result="completed" taskName="verifytitle">
+                <parameter name="regex" value="true"/>
+                <parameter name="text" value=".*ä¸»èå.*"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="196" description="verify success message" duration="0" result="completed" taskName="verifytext">
+                <parameter name="text" value="æ³¨åæåï¼æ¨å¯ä»¥å¼å§ä½¿ç¨ç³»ç»ã"/>
+            </step>
+        </results>
+    </testresult>
+</summary>

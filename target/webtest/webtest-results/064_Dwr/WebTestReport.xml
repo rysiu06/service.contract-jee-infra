@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<summary Implementation-Title="Canoo Webtest" Implementation-Version="development">
+    <testresult endtime="Tue Dec 18 16:27:20 CST 2012"
+        location="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml:247: "
+        starttime="Tue Dec 18 16:27:16 CST 2012" successful="yes" testspecname="dwr">
+        <config>
+            <parameter name="port" value="8081"/>
+            <parameter name="protocol" value="http"/>
+            <parameter name="host" value="localhost"/>
+            <parameter name="resultpath" value="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\target\webtest\webtest-results"/>
+            <parameter name="saveprefix" value="response"/>
+            <parameter name="basepath" value="ServiceContractSystem-0.0.1-SNAPSHOT"/>
+            <parameter name="resultfile" value="WebTestReport.xml"/>
+            <parameter name="haltonerror" value="no"/>
+            <parameter name="browser" value="IE6"/>
+            <parameter name="saveresponse" value="yes"/>
+            <parameter name="haltonfailure" value="no"/>
+            <parameter name="autorefresh" value="false"/>
+            <parameter name="timeout" value="300"/>
+            <parameter name="showhtmlparseroutput" value="no"/>
+        </config>
+        <results>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\login.xmlf"
+                _line="1" description="get Login Page" duration="1840" result="completed" taskName="invoke">
+                <parameter name="-> complete url" value="http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT"/>
+                <parameter name="url" value="/"/>
+                <resultFile name="001_response_invoke.html"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\login.xmlf"
+                _line="2" description="we should see the login title" duration="10"
+                result="completed" taskName="verifytitle">
+                <parameter name="regex" value="true"/>
+                <parameter name="text" value=".*ç»å½.*"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\login.xmlf"
+                _line="3" description="set user name" duration="30" result="completed" taskName="setinputfield">
+                <parameter name="name" value="j_username"/>
+                <parameter name="value" value="admin"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\login.xmlf"
+                _line="4" description="set password" duration="30" result="completed" taskName="setinputfield">
+                <parameter name="name" value="j_password"/>
+                <parameter name="value" value="admin"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\login.xmlf"
+                _line="5" description="Click the submit button" duration="400" result="completed" taskName="clickbutton">
+                <parameter name="label" value="ç»å½"/>
+                <resultFile name="002_response_clickbutton.html"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\login.xmlf"
+                _line="6" description="Home Page follows if login ok" duration="0"
+                result="completed" taskName="verifytitle">
+                <parameter name="regex" value="true"/>
+                <parameter name="text" value=".*ä¸»èå.*"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="251" duration="1413" result="completed" taskName="invoke">
+                <parameter name="-> complete url" value="http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/dwr/"/>
+                <parameter name="url" value="/dwr/"/>
+                <resultFile name="003_response_invoke.html"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="252" description="should DWR Test Index" duration="16" result="completed" taskName="verifytitle">
+                <parameter name="regex" value="true"/>
+                <parameter name="text" value="DWR Test Index.*"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="253" description="click on UserManager link" duration="904"
+                result="completed" taskName="clicklink">
+                <parameter name="label" value="UserManager"/>
+                <resultFile name="004_response_clicklink.html"/>
+            </step>
+            <step
+                _filename="C:\Users\Fujitsu\workspace\trading\ServiceContractSystem\src\test\resources\web-tests.xml"
+                _line="254" description="verify next page comes up" duration="0" result="completed" taskName="verifytext">
+                <parameter name="text" value="Methods For: UserManager"/>
+            </step>
+        </results>
+    </testresult>
+</summary>

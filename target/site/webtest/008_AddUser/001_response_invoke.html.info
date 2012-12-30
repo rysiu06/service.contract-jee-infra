@@ -1,0 +1,6 @@
+url=http://localhost:8081/test02-0.0.1-SNAPSHOT/login
+cookies=1
+cookie.0.name=JSESSIONID
+cookie.0.domain=localhost
+cookie.0.value=C64FA2E26C61A6F9ADA3B4FD5FC30E62
+cookie.0.path=/test02-0.0.1-SNAPSHOT/

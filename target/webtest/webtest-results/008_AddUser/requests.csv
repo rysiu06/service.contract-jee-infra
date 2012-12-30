@@ -1,0 +1,21 @@
+#;Method;URL;Response code;Response Message;Content Type;Duration
+1;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT;302;Found;;16
+2;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/;302;Found;;16
+3;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/mainMenu;302;Found;;16
+4;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/login;200;OK;text/html;15
+5;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/scripts/lib/jquery-1.8.2.min.js;200;OK;application/javascript;16
+6;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/styles/lib/bootstrap-2.2.1.min.css;200;OK;text/css;16
+7;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/styles/lib/bootstrap-responsive-2.2.1.min.css;200;OK;text/css;16
+8;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/styles/style.css;200;OK;text/css;16
+9;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/scripts/lib/bootstrap-2.2.1.min.js;200;OK;application/javascript;10
+10;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/scripts/lib/plugins/jquery.cookie.js;200;OK;application/javascript;10
+11;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/scripts/script.js;200;OK;application/javascript;10
+12;POST;http://localhost:8081/test02-0.0.1-SNAPSHOT/j_security_check;302;Found;;20
+13;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/app/mainMenu;302;Found;;10
+14;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/mainMenu;200;OK;text/html;20
+15;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/userform?method=Add&from=list;200;OK;text/html;60
+16;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/scripts/validator.jsp;200;OK;text/javascript;10
+17;POST;http://localhost:8081/test02-0.0.1-SNAPSHOT/userform;302;Found;;1301
+18;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/admin/users;200;OK;text/html;41
+19;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/userform?id=3&from=list;200;OK;text/html;63
+20;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/scripts/validator.jsp;200;OK;text/javascript;16

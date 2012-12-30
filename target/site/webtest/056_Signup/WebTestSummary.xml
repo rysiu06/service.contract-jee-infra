@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <summary starttime="Tue Dec 18 16:26:33 CST 2012" duration="11996" name="signup" successful="yes">
+<topsteps notexecuted="0" failed="0" successful="17" total="17"/>
+<steps notexecuted="0" failed="0" successful="17" total="17"/>
+<timingprofile number="1" average="5912">
+<range number="0" to="1" from="0"/>
+<range number="0" to="3" from="1"/>
+<range number="1" to="5" from="3"/>
+<range number="1" to="10" from="5"/>
+<range number="0" to="30" from="10"/>
+<range number="0" from="30"/>
+</timingprofile>
+</summary>
