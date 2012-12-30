@@ -1,0 +1,21 @@
+#;Method;URL;Response code;Response Message;Content Type;Duration
+1;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT;302;Found;;10
+2;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/;302;Found;;10
+3;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/mainMenu;302;Found;;10
+4;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/login;200;OK;text/html;130
+5;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/scripts/lib/jquery-1.8.2.min.js;200;OK;application/javascript;260
+6;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/styles/lib/bootstrap-2.2.1.min.css;200;OK;text/css;20
+7;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/styles/lib/bootstrap-responsive-2.2.1.min.css;200;OK;text/css;10
+8;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/styles/style.css;200;OK;text/css;20
+9;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/scripts/lib/bootstrap-2.2.1.min.js;200;OK;application/javascript;10
+10;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/scripts/lib/plugins/jquery.cookie.js;200;OK;application/javascript;10
+11;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/scripts/script.js;200;OK;application/javascript;10
+12;POST;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/j_security_check;302;Found;;20
+13;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/app/mainMenu;302;Found;;10
+14;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/mainMenu;200;OK;text/html;20
+15;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/dwr/;302;Found;;1054
+16;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/dwr/index.html;200;OK;text/html;31
+17;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/dwr/test/UserManager;200;OK;text/html;47
+18;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/dwr/interface/UserManager.js;200;OK;text/plain;62
+19;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/dwr/engine.js;200;OK;text/javascript;62
+20;GET;http://localhost:8081/ServiceContractSystem-0.0.1-SNAPSHOT/dwr/util.js;200;OK;text/javascript;16

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <summary starttime="Tue Dec 18 15:21:52 CST 2012" duration="6878" name="addUser" successful="no">
+<topsteps notexecuted="3" failed="1" successful="26" total="30"/>
+<steps notexecuted="3" failed="1" successful="26" total="30"/>
+<timingprofile number="3" average="957">
+<range number="2" to="1" from="0"/>
+<range number="1" to="3" from="1"/>
+<range number="0" to="5" from="3"/>
+<range number="0" to="10" from="5"/>
+<range number="0" to="30" from="10"/>
+<range number="0" from="30"/>
+</timingprofile>
+<failingstep name="clickbutton" description="Click button 'Delete'"/>
+</summary>

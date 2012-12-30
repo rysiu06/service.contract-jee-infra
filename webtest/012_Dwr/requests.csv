@@ -1,0 +1,21 @@
+#;Method;URL;Response code;Response Message;Content Type;Duration
+1;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT;302;Found;;0
+2;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/;302;Found;;15
+3;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/mainMenu;302;Found;;17
+4;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/login;200;OK;text/html;16
+5;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/scripts/lib/jquery-1.8.2.min.js;200;OK;application/javascript;16
+6;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/styles/lib/bootstrap-2.2.1.min.css;200;OK;text/css;15
+7;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/styles/lib/bootstrap-responsive-2.2.1.min.css;200;OK;text/css;16
+8;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/styles/style.css;200;OK;text/css;16
+9;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/scripts/lib/bootstrap-2.2.1.min.js;200;OK;application/javascript;16
+10;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/scripts/lib/plugins/jquery.cookie.js;200;OK;application/javascript;16
+11;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/scripts/script.js;200;OK;application/javascript;15
+12;POST;http://localhost:8081/test02-0.0.1-SNAPSHOT/j_security_check;302;Found;;16
+13;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/app/mainMenu;302;Found;;15
+14;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/mainMenu;200;OK;text/html;16
+15;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/dwr/;302;Found;;327
+16;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/dwr/index.html;200;OK;text/html;16
+17;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/dwr/test/UserManager;200;OK;text/html;32
+18;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/dwr/interface/UserManager.js;200;OK;text/plain;16
+19;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/dwr/engine.js;200;OK;text/javascript;62
+20;GET;http://localhost:8081/test02-0.0.1-SNAPSHOT/dwr/util.js;200;OK;text/javascript;15

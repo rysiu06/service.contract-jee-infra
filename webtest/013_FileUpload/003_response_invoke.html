@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Cache-Control" content="no-store"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/test02-0.0.1-SNAPSHOT/images/favicon.ico"/>
+    <title>æä»¶ä¸ä¼  | AppFuse</title>
+
+    <link rel="stylesheet" type="text/css" media="all" href="/test02-0.0.1-SNAPSHOT/styles/lib/bootstrap-2.2.1.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/test02-0.0.1-SNAPSHOT/styles/lib/bootstrap-responsive-2.2.1.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/test02-0.0.1-SNAPSHOT/styles/style.css" />
+    <meta name="menu" content="AdminMenu"/><script type="text/javascript" src="/test02-0.0.1-SNAPSHOT/scripts/lib/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/test02-0.0.1-SNAPSHOT/scripts/lib/bootstrap-2.2.1.min.js"></script>
+    <script type="text/javascript" src="/test02-0.0.1-SNAPSHOT/scripts/lib/plugins/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/test02-0.0.1-SNAPSHOT/scripts/script.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="/test02-0.0.1-SNAPSHOT/">AppFuse</a>
+                <div class="nav-collapse collapse">
+<ul class="nav">
+    
+           
+                <li class="">
+        <a href="/test02-0.0.1-SNAPSHOT/mainMenu" title="ä¸»èå" >ä¸»èå</a>
+    
+          </li>
+            
+           
+                <li class="">
+        <a href="/test02-0.0.1-SNAPSHOT/userform" title="ç¼è¾ä¿¡æ¯" >ç¼è¾ä¿¡æ¯</a>
+    
+          </li>
+            
+           
+                                                                                                                                                                                                                     
+        <li class="dropdown active">
+          <a href="#" title="ç³»ç»ç®¡ç"
+                                       class="dropdown-toggle" data-toggle="dropdown">ç³»ç»ç®¡ç</a>
+    
+                      <ul class="dropdown-menu">
+        
+                                       
+                <li class="">
+        <a href="/test02-0.0.1-SNAPSHOT/admin/users" title="æ¥çç¨æ·" >æ¥çç¨æ·</a>
+    
+          </li>
+                                           
+                <li class="">
+        <a href="/test02-0.0.1-SNAPSHOT/admin/activeUsers" title="å¨çº¿ç¨æ·" >å¨çº¿ç¨æ·</a>
+    
+          </li>
+                                           
+                <li class="">
+        <a href="/test02-0.0.1-SNAPSHOT/admin/reload" title="éè½½éé¡¹" >éè½½éé¡¹</a>
+    
+          </li>
+                                           
+                <li class="">
+        <a href="/test02-0.0.1-SNAPSHOT/fileupload" title="ä¸ä¼ æä»¶" >ä¸ä¼ æä»¶</a>
+    
+          </li>
+            </ul>
+                    
+                  </li>
+              
+           
+                <li class="">
+        <a href="/test02-0.0.1-SNAPSHOT/logout" title="éåº" >éåº</a>
+    
+          </li>
+            </ul>
+</div>
+<div id="switchLocale"><a href="/test02-0.0.1-SNAPSHOT/?locale=en">
+                        AppFuse in English</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span3">
+    <h2>ä¸ä¼ ä¸æä»¶</h2>
+    <p>ä¸»è¦ç³»ç»åè®¸ä¸ä¼ æä»¶çæå¤§å¼ä¸º 2 MBã</p>
+</div>
+<div class="span7">
+    <form id="uploadForm" class="well form-horizontal" action="fileupload" method="post" enctype="multipart/form-data" onsubmit="return validateFileUpload(this)"><fieldset class="control-group">
+        <label for="name" class="control-label">éå½åæä»¶</label><div class="controls">
+                <input id="name" name="name" type="text" value=""/></div>
+        </fieldset>
+        <fieldset class="control-group">
+        <label for="file" class="control-label">éæ©æä»¶</label><div class="controls">
+                <input type="file" name="file" id="file"/>
+                </div>
+        </fieldset>
+        <fieldset class="form-actions">
+            <button type="submit" name="upload" class="btn btn-primary" onclick="bCancel=false">
+                <i class="icon-upload icon-white"></i> ä¸ä¼ </button>
+            <button type="submit" name="cancel" class="btn" onclick="bCancel=true">
+                <i class="icon-remove"></i> åæ¶</button>
+        </fieldset>
+    </form></div><div class="span2">
+                
+        
+      <ul class="nav nav-list">
+           <li class="nav-header">ç³»ç»ç®¡ç</li>                        <li ><a href="/test02-0.0.1-SNAPSHOT/admin/users" title="æ¥çç¨æ·" >æ¥çç¨æ·</a></li>
+                                <li ><a href="/test02-0.0.1-SNAPSHOT/admin/activeUsers" title="å¨çº¿ç¨æ·" >å¨çº¿ç¨æ·</a></li>
+                                <li ><a href="/test02-0.0.1-SNAPSHOT/admin/reload" title="éè½½éé¡¹" >éè½½éé¡¹</a></li>
+                                <li class="active"><a href="/test02-0.0.1-SNAPSHOT/fileupload" title="ä¸ä¼ æä»¶" >ä¸ä¼ æä»¶</a></li>
+                    </ul>
+  </div>
+            </div>
+    </div>
+
+    <div id="footer">
+        <span class="left">Version 0.0.1-SNAPSHOT
+            | å½åç¨æ·: admin</span>
+        <span class="right">
+            &copy; 2012<a href="http://raibledesigns.com">Your Company Here</a>
+        </span>
+    </div>
+<script type="text/javascript" language="Javascript1.1"> 
+
+<!-- Begin 
+
+     var bCancel = false; 
+
+    function validateFileUpload(form) {                                                                   
+        if (bCancel) 
+      return true; 
+        else 
+       return validateRequired(form); 
+   } 
+
+    function required () { 
+     this.aa = new Array("name", "éå½åæä»¶ ä¸ºå¿å¡«é¡¹ã", new Function ("varName", " return this[varName];"));
+     this.ab = new Array("file", "éæ©æä»¶ ä¸ºå¿å¡«é¡¹ã", new Function ("varName", " return this[varName];"));
+    } 
+
+
+//End --> 
+</script>
+
+<script type="text/javascript" src="/test02-0.0.1-SNAPSHOT/scripts/validator.jsp"></script></body>
+</html>
